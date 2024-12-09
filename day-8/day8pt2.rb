@@ -20,7 +20,7 @@ def compare_distance(first, second)
 end
 
 # Part 2, very repetitive but it is late
-def find_antenna_pairs(grid, line)
+def find_antinodes(grid, line)
   remove_boundaries = -> (elem) { elem[0] < 0 || elem[0] > grid.length - 1 || elem[1] < 0 || elem[1] > grid.length - 1 }
   if line.count < 2
     0
